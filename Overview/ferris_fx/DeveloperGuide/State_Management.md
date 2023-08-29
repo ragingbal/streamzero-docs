@@ -7,10 +7,10 @@ description: >-
 
 One key aspect in reactive applications is how to manage state between runs.
 
-With Ferris this is simple. Each Service has a state object available at run time. All you need to do is the following.
+With {{< param replacables.brand_name  >}} this is simple. Each Service has a state object available at run time. All you need to do is the following.
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 
 my_state = context.state.get()  # returns a state previously set
 some_value = my_state.get('key')

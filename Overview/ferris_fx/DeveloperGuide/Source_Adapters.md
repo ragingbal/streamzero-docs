@@ -2,13 +2,13 @@
 title: "Event Source Adapters"
 linkTitle: "Event Source Adapters"
 description: >-
-    A Guide to Integrations Using the Ferris Edge Adapter.
+    A Guide to Integrations Using the {{< param replacables.brand_name  >}} Edge Adapter.
 ---
 
-The Event Source Adapter enables easy integration of external event streams to Ferris.
+The Event Source Adapter enables easy integration of external event streams to {{< param replacables.brand_name  >}}.
 
 The role of the Event Source Adapter is to receive events from external streams, convert them into Cloud Events and push
-them to the ferris.events Kafka Topic. The Cloud Events that are generated will contain an indicator of the source, one
+them to the {{< param replacables.brand_name_lowercase  >}}.events Kafka Topic. The Cloud Events that are generated will contain an indicator of the source, one
 or more specific event types (depending on the type of source and the use case) and the content of the source event in
 the payload of the output Cloud Even.
 
@@ -98,21 +98,21 @@ _Twitter Adapter: Streams twitter based on configured hash tags and converts the
 The Edge Adapter exposes a single endpoint for Webhooks. The webhook may be used for a large number of incoming
 integrations. Some examples are provided below.
 
-To see the API please visit webhook.edge.YOURDOMAIN.COM/ui . For example webhook.edge.ferris.ai .
+To see the API please visit webhook.edge.YOURDOMAIN.COM/ui . For example webhook.edge.{{< param replacables.brand_name_lowercase  >}}.ai .
 
 In order to use the end point you must first generate a token to be used when submitting to the endpoint. To generate a
 token please apply the following instructions:
 
 ## How it Works
 
-The Ferris Edge Adapter is an edge service which is exposed to services outside the network for incoming integrations
+The {{< param replacables.brand_name  >}} Edge Adapter is an edge service which is exposed to services outside the network for incoming integrations
 with external services. It exposes a single token protected endpoint which accepts a JSON payload within a POST request.
 
-The payload encapsulated within the POST is forwarded to the ferris.events topic with the data encapsulated in the Cloud
-Events 'data' section. The event type is 'ferris.events.webhook.incoming' .
+The payload encapsulated within the POST is forwarded to the {{< param replacables.brand_name_lowercase  >}}.events topic with the data encapsulated in the Cloud
+Events 'data' section. The event type is '{{< param replacables.brand_name_lowercase  >}}.events.webhook.incoming' .
 The platform may host any number of packages which then process the webhooks based on parsing the data section.
 
-The Ferris Edge Adapter is one of the few services exposed to the Internet.
+The {{< param replacables.brand_name  >}} Edge Adapter is one of the few services exposed to the Internet.
 
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="791px" viewBox="-0.5 -0.5 791 361" content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2022-03-05T13:19:23.526Z&quot; agent=&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36&quot; etag=&quot;gZI6pTrMld-1zDmk83Rd&quot; version=&quot;16.6.6&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;NCeLZd7OVaFKNnc5RCcu&quot; name=&quot;Page-1&quot;&gt;7Zpdc6IwFIZ/jTO7F+0AEdBLRGzd2uqKte0lK6mwg8SNsWp//QYIn1HLtip2tl605s2Hycl5kpxADeiz9RW25s4tsqFXkwR7XQPtmiQ16wr9GwibSKirjUiYYteOJCEVTPcVRqIYq0vXhgumRRJByCPuPC9OkO/DCclpFsZolS/2jDw7J8ytKeQEc2J5vPrg2sSJ1Iakpvo1dKdO/Mui0oxyZlZcmI1k4Vg2WmUkYNSAjhEi0bfZWodeYLu8XTo7cpOOYeiTMhUGy1u3AcBj92qsbTz4+vOH2b6QQNTMi+Ut2YhZb8kmNgFGS9+GQStiDbRWjkugObcmQe6KzjnVHDLzWPYz8omOPITDuqATfgLd9bxY95FPK7dsa+EkzSbWEWiC9QliAtc7RysmNqS+B9EMEryhRVgFOXYg5nfJNKzSWZSaTHMyM5gUtJjnTJO2U+PSL8y+/2Brsc6ZFtrU2VgSYeKgKfItz0jVVqr2EJozY/2GhGwYK9aSoPwUwLVLHjPfnwKrXsos1V4zI4eJTZzw6Qgfs4lMrSCZVgtTm9xMBcPYP0901GiJJ3CfeRjdFp5Csq8c2D7xGHoWcV/yHTn8JG7hRfEI8/xwIYqdX/mzDNimNgLP4ScrKdPgf8cYDrtm3MIvHOtG+8rgVa2tDUbGMM6g/Y9+M8rlncvz6CoJ32bWWsyjpfPZXQdA5mANIQb0cxgu6zEFjEtR5blsbMGycTQqBd5wn53KyRK/JCvrARGVyiJaJaESR6j2sA2xsXE34uXWsBuy95E98ACYiM389iU2eExEaQsnyrE4aXA2OXMI3qb4WJiAkphIH8SEVR0gN9x51gVXYa6jFjwi6harVHCKpBfv9xP+QBniJ5hgD1TCaaAqMFUvyRQ42t4jcjb52nt22Kp+or1nO1SgsB6fmqo6R9VVd3R93+I3sAejdd3v35zdDpbsTJXtYCIf2n7RtsNW8n9Nm8zRNnro9nrd/o5jpDkaGtrt52FRFKpmsfmFYlkUlUpPk5JQQLF4GDoyigqHYnC8bdVAh6rsZGkMx13dMM/tfClVf75UPgFmYnU3jmUDNVH+IFsfm0U+pPph9u8upAu9179v77jI0Pt3Y2MYXhdWjIWs5rnYdpUhb8GiLh/LoPxdxlGxEN6DRWH3UU/JRenTn1olF8mDtU80jWc5i81KVzf+sH2jdW60XUdtWnTUH3T16pe1YpAiV76uqZwpB5p+owX32YK2x2CniUIUQc4ZDIDKz0fNPQbjH6hVbrCyDwGOZjDpPVcoucDozIO4A66/yesqJ7lD0TC2NpkC8yAgW2RaLl6xFJ4SALXw9sgb5eNgJ/WmqAcHDf7iUWcfJtw97blnKWaw0JA28S0IFHsU7svLy+98wcpZL17RgLLB4zuuaGgyfe0omqv03S1g/AU=&lt;/diagram&gt;&lt;/mxfile&gt;" onclick="(function(svg){var src=window.event.target||window.event.srcElement;while (src!=null&amp;&amp;src.nodeName.toLowerCase()!='a'){src=src.parentNode;}if(src==null){if(svg.wnd!=null&amp;&amp;!svg.wnd.closed){svg.wnd.focus();}else{var r=function(evt){if(evt.data=='ready'&amp;&amp;evt.source==svg.wnd){svg.wnd.postMessage(decodeURIComponent(svg.getAttribute('content')),'*');window.removeEventListener('message',r);}};window.addEventListener('message',r);svg.wnd=window.open('https://viewer.diagrams.net/?client=1&amp;page=0&amp;edit=_blank');}}})(this);" style="cursor:pointer;max-width:100%;max-height:361px;"><defs/><g><rect x="500" y="140" width="290" height="220" rx="33" ry="33" fill="none" stroke="rgb(0, 0, 0)" stroke-dasharray="3 3" pointer-events="all"/><path d="M 484 130 L 512 130 Q 522 130 522 120 L 522 32.5 Q 522 22.5 532 22.5 L 553.63 22.5" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/><path d="M 558.88 22.5 L 551.88 26 L 553.63 22.5 L 551.88 19 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/><ellipse cx="444" cy="130" rx="40" ry="40" fill="#ff3333" stroke="rgb(0, 0, 0)" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 130px; margin-left: 405px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font color="#ffffff">
 FERRIS<br />EDGE<br />
@@ -165,7 +165,7 @@ The following sections document details on some of the possible integrations.
 
 ### AWS S3 ( please switch images)
 
-A pre-requisite is to ensure that EventBridge is sending Events to Ferris. Please see this section on how to set it up.
+A pre-requisite is to ensure that EventBridge is sending Events to {{< param replacables.brand_name  >}}. Please see this section on how to set it up.
 
 Create a bucket and switch to the Properties Tab of the UI
 
@@ -189,7 +189,7 @@ Select the Webhooks menu on the left of the 'Settings' page. Then click on the '
 {{< blocks/screenshot color="white" image="/images/image-20220305123425675.png">}}
 
 Add the URL of your edge adapter end point. And ensure the content type is application/json. Finally add the api token
-generated on the Ferris Management UI. Further in the page you may select what event types should be sent. If unsure
+generated on the {{< param replacables.brand_name  >}} Management UI. Further in the page you may select what event types should be sent. If unsure
 please maintain the default settings.
 
 {{< blocks/screenshot color="white" image="/images/image-20220305123919206.png">}}

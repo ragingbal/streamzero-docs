@@ -3,14 +3,14 @@ title: "Integrations Guide"
 linkTitle: "Integrations Guide"
 weight: 2
 description: >
-  Ferris SX Integrations Guide (for Engineers).
+  {{< param replacables.brand_name  >}} SX Integrations Guide (for Engineers).
 ---
 
 ## How does it Work?
 
 There are two main approaches to implementing the external notifications support.
 
-* Implementation within a Ferris SX container
+* Implementation within a {{< param replacables.brand_name  >}} SX container
 * Implementation in an Exit Gateway
 
 The 2nd option is used in platforms which are behind a firewall and therefore require the gateway to be outside the firewall for accessing external services. In these cases the adapter runs as a separate container. 

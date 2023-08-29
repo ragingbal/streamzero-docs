@@ -3,7 +3,7 @@ title: "Tools manifest"
 linkTitle: "Tools manifest"
 weight: 4
 description: >
-  The following section provides a short overview of Ferris DX Tools manifest.
+  The following section provides a short overview of {{< param replacables.brand_name  >}} DX Tools manifest.
 ---
 
 List of all software used within the Executor, Streaming Automation and Event driven Kubernetes platform and infrastructure.

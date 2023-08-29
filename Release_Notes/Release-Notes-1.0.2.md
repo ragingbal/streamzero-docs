@@ -9,7 +9,7 @@ description: >-
 
 ---
 
-![ferris_banner](/images/ferris_banner.png)
+![{{< param replacables.brand_name_lowercase  >}}_banner](/images/{{< param replacables.brand_name_lowercase  >}}_banner.png)
 
 
 

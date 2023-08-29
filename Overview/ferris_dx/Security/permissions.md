@@ -11,13 +11,13 @@ description: >-
 
 #### Roles
 
-This is us - humans - using Ferris on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.
+This is us - humans - using {{< param replacables.brand_name  >}} on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.
 
 > To get the the Users page, navigate to: Security > List Roles
 
 {{< blocks/screenshot color="white" image="/images/list_users_page.png">}}
 
-*Example: List of Ferris Users*
+*Example: List of {{< param replacables.brand_name  >}} Users*
 
 Besides displaying the list of all current users, the Users page offers a number of capabilities:
 

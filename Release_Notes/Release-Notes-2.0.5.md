@@ -8,7 +8,7 @@ description: >-
      New features, improvements and fixes provided to you in the 1st and 2nd Quarter of 2023.
 ---
 
-![ferris_banner](/images/ferris_banner.png)
+![{{< param replacables.brand_name_lowercase  >}}_banner](/images/{{< param replacables.brand_name_lowercase  >}}_banner.png)
 
 
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
@@ -41,7 +41,7 @@ description: >-
 
 - Added **caching of old executions** to improve the speed of rendering.
 
-- Extension to **ferris_ef** library:
+- Extension to **{{< param replacables.brand_name_lowercase  >}}_ef** library:
 
      - supporting new correlation id
      - support for logging. Logs of services which use the ferri_ef logging are aggregated to Kafka.

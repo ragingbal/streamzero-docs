@@ -7,7 +7,7 @@ description: >-
 ---
 
 Before you begin creating your services it is best to create a Project and link a GIT Repository to the project. Since
-Ferris uses a GitOps approach this will ensure you can deploy and iterate your code faster.
+{{< param replacables.brand_name  >}} uses a GitOps approach this will ensure you can deploy and iterate your code faster.
 
 Follow the steps described below to create your first project and link it to a GIT Repository.
 
@@ -43,7 +43,7 @@ Follow the steps described below to create your first project and link it to a G
 *Note that before adding your GitHub Repository to the platform, a public SSH key needs to be generated.*
 
 1. Login to your GitHub account
-2. Go to the Repository you want to add to the project, in this use case `ferris-packages`
+2. Go to the Repository you want to add to the project, in this use case `{{< param replacables.brand_name_lowercase  >}}-packages`
 3. Click on the `Green Code Button` to display the repository URLs
 4. Copy the SSH URL
 
@@ -58,9 +58,9 @@ Follow the steps described below to create your first project and link it to a G
 
 {{< blocks/screenshot color="white" image="/images/create_git_repo.png">}}
 
-*Note that a pair of public and private keys are generated for each repository which is set up on the FerrisFX platform.
+*Note that a pair of public and private keys are generated for each repository which is set up on the {{< param replacables.brand_name  >}}FX platform.
 The private key is encrypted and stored safely in the database and will never be presented to anyone, whereas the public
-key should be copied and added to the git repository in order to provide the FerrisFX access to the repository and the
+key should be copied and added to the git repository in order to provide the {{< param replacables.brand_name  >}}FX access to the repository and the
 possibility to clone packages.*
 
 {{< blocks/screenshot color="white" image="/images/public_key_repo.png">}}
@@ -86,7 +86,7 @@ possibility to clone packages.*
 
 ## Synchronise the Repository
 
-1. Return to the FerrisFX platform
+1. Return to the {{< param replacables.brand_name  >}}FX platform
 2. Click the Sync Now button to synchronise the platform with the Git Repository.
 
 {{< blocks/screenshot color="white" image="/images/sync_now_button.png">}}

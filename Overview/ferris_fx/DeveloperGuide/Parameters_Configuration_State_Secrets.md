@@ -3,27 +3,27 @@ title: "Parameters and Configurations"
 linkTitle: "Parameters and Configurations"
 weight: 204
 description: >-
-     Retrieve Parameters and Configurations using ferris_ef module.
+     Retrieve Parameters and Configurations using {{< param replacables.brand_name_lowercase  >}}_ef module.
 ---
 
 
 # The FERRIS Executor Helper
 
- The `ferris_ef` package can be used for fetching package's configuration, parameters, secrets and state through its context.
+ The `{{< param replacables.brand_name_lowercase  >}}_ef` package can be used for fetching package's configuration, parameters, secrets and state through its context.
  
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 ```
 
 ### Accessing package configuration
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 
 context.config.get('some_configuration_key')
 ```
 
-To create a configuration set just place a `config.json` in your service directory. Ferris loads and maintains it in Consul.
+To create a configuration set just place a `config.json` in your service directory. {{< param replacables.brand_name  >}} loads and maintains it in Consul.
 
 The following is a sample configuration file.
 
@@ -45,12 +45,12 @@ As illustrated above the configuration may contain simple attributes, dictionari
 You can access execution parameters as shown below.
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 
 context.params.get('param_name')
 ```
 
-These parameters are populated from the `data` section of the trigerring CloudEvent or from the values entered in the form attached to the service. Please review section [Service UI generation](/docs/overview/ferris_fx/developerguide/"ui_generator")
+These parameters are populated from the `data` section of the trigerring CloudEvent or from the values entered in the form attached to the service. Please review section [Service UI generation](/docs/overview/{{< param replacables.brand_name_lowercase  >}}_fx/developerguide/"ui_generator")
 
 An example CloudEvent:
 
@@ -75,10 +75,10 @@ In the next section we discuss Secrets Storage and Retreival and passing state b
 
 ### Accessing secrets
 
-With `ferris_ef.context.secrets` you can access secrets stored on platform, project or package level.    
+With `{{< param replacables.brand_name_lowercase  >}}_ef.context.secrets` you can access secrets stored on platform, project or package level.    
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 
 context.secrets.get('secret_name')
 ```
@@ -87,10 +87,10 @@ This command will first lookup for secret named `secret_name` within package sec
 
 ### Setting secrets
 
-Using `ferris_ef.context.secrets.set(name, value, context)` method you can set secrets on project and platform level.   
+Using `{{< param replacables.brand_name_lowercase  >}}_ef.context.secrets.set(name, value, context)` method you can set secrets on project and platform level.   
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 
 context.secrets.set(name="platform_secret", value={"somekey":"someval"}, context="platform")
 ```
@@ -105,7 +105,7 @@ context.secrets.set(name="platform_secret", value={"somekey":"someval"}, context
 ### Accessing package id and name
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 
 context.package.name
 context.package.id
@@ -114,16 +114,16 @@ context.package.id
 ### Accessing and updating package state
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 
 context.state.get()
 context.state.put("some_key", "some_value")
 ```
 
 
-## Using `ferris_ef` for local development
+## Using `{{< param replacables.brand_name_lowercase  >}}_ef` for local development
 
-To use `ferris_ef` for local development and testing without need to run scripts through Executor `EF_ENV=local` env variable must be set. When it is set `ferris_ef.context` will be read from local file `ef_env.json` that must be created within same directory as the script that is accessing `ferris_ef.context`.  
+To use `{{< param replacables.brand_name_lowercase  >}}_ef` for local development and testing without need to run scripts through Executor `EF_ENV=local` env variable must be set. When it is set `{{< param replacables.brand_name_lowercase  >}}_ef.context` will be read from local file `ef_env.json` that must be created within same directory as the script that is accessing `{{< param replacables.brand_name_lowercase  >}}_ef.context`.  
 `ef_env.json` must have following structure:
 
 ```json

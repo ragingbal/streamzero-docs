@@ -16,7 +16,7 @@ structures. The following are a few important related topics.
 
 ## Understand the Structure
 
-The Ferris DX events are based on CloudEvents.
+The {{< param replacables.brand_name  >}} DX events are based on CloudEvents.
 
 ## Understanding Correlation IDs
 
@@ -66,7 +66,7 @@ When this strategy is applied only the attributes present in the mapping file wi
 
 ```json
 {
-    "ferris.sample.event_a": "ferris.sample.event_b",
+    "{{< param replacables.brand_name_lowercase  >}}.sample.event_a": "{{< param replacables.brand_name_lowercase  >}}.sample.event_b",
     "name": "first_name",
     "role": "designation"
 }
@@ -76,7 +76,7 @@ When this strategy is applied only the attributes present in the mapping file wi
 
 ```json
 {
-    "type": "ferris.sample.event_a",
+    "type": "{{< param replacables.brand_name_lowercase  >}}.sample.event_a",
     "name": "Bal",
     "role": "developer",
     "mobile": "1234567"
@@ -90,7 +90,7 @@ first_name and designation in the output event. But the mobile number will be st
 
 ```json
 {
-    "type": "ferris.sample.event_b",
+    "type": "{{< param replacables.brand_name_lowercase  >}}.sample.event_b",
     "first_name": "Bal",
     "designation": "developer"
 }
@@ -106,7 +106,7 @@ _Please note that you cannot map events to the same event type to avoid loopback
 
 ```json
 {
-    "ferris.sample.event_a": "ferris.sample.event_b",
+    "{{< param replacables.brand_name_lowercase  >}}.sample.event_a": "{{< param replacables.brand_name_lowercase  >}}.sample.event_b",
     "name": "first_name",
     "role": "designation"
 }
@@ -116,7 +116,7 @@ _Please note that you cannot map events to the same event type to avoid loopback
 
 ```json
 {
-    "type": "ferris.sample.event_a",
+    "type": "{{< param replacables.brand_name_lowercase  >}}.sample.event_a",
     "name": "Bal",
     "role": "developer"
     "mobile": "1234567"
@@ -130,7 +130,7 @@ first_name and designation in the output event. But the mobile number will be st
 
 ```json
 {
-    "type": "ferris.sample.event_b",
+    "type": "{{< param replacables.brand_name_lowercase  >}}.sample.event_b",
     "first_name": "Bal",
     "designation": "developer",
     "mobile": "1234567"

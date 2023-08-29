@@ -8,11 +8,11 @@ description: >-
     New features, improvements and fixes provided to you in July 2023.
 ---
 
-![ferris_banner](/images/ferris_banner.png)
+![{{< param replacables.brand_name_lowercase  >}}_banner](/images/{{< param replacables.brand_name_lowercase  >}}_banner.png)
 
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 
-- We introduced a new **skip execution** button to prevent scheduled executions in the Ferris Executor from running.
+- We introduced a new **skip execution** button to prevent scheduled executions in the {{< param replacables.brand_name  >}} Executor from running.
   With this button, users can skip executions until further notice. With the same button, users can unskip executions
   and and thus bring them back into the planned execution cycle.
 

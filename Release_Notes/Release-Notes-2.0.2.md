@@ -8,7 +8,7 @@ description: >-
      New features, improvements and fixes provided to you in the 2nd Quarter of the year 2022.
 ---
 
-![ferris_banner](/images/ferris_banner.png)
+![{{< param replacables.brand_name_lowercase  >}}_banner](/images/{{< param replacables.brand_name_lowercase  >}}_banner.png)
 
 
 
@@ -27,14 +27,14 @@ description: >-
 ## Changed <img src="/images/changed_yellow.png" alt="changed_yellow" style="zoom:25%;" /> 
 
 - [x] Re-enabling of the Project/Package/Git Repository/Execution **deletion feature**. 
-- [x] **Version 2 of ferris_cli package** published to public Pypi repository.
+- [x] **Version 2 of {{< param replacables.brand_name_lowercase  >}}_cli package** published to public Pypi repository.
 
 ---
 
 ## Improved <img src="/images/improved_green.png" alt="improved_green" style="zoom:25%;" />
 
-- [x] **Executor ferris_ef package** adjusted for local development.
-- [x] Various changes on the **Ferris UI**.
+- [x] **Executor {{< param replacables.brand_name_lowercase  >}}_ef package** adjusted for local development.
+- [x] Various changes on the **{{< param replacables.brand_name  >}} UI**.
 - [x] New **charts** on dashboard - **slowest executions and packages**.
 - [x] Introduced **module based translations** instead of global translations.
 - [x] Improved **Git Synchronisation error handling**.

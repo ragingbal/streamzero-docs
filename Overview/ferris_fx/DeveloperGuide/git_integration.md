@@ -2,10 +2,10 @@
 title: "Git Integration"
 linkTitle: "Git Integration"
 description: >-
-  How to integrate a Git Repository with the Ferris Platform.
+  How to integrate a Git Repository with the {{< param replacables.brand_name  >}} Platform.
 ---
 
-The Git Integration is the capability to generate a connection from a git repository with projects and synchronise the services from the Executor with the git repository, with the goal to execute it through the FerrisFX Platform. It provides another, more fluent way for connecting scripts with the FerrisFX Platform without the necessity to upload files directly to the platform.
+The Git Integration is the capability to generate a connection from a git repository with projects and synchronise the services from the Executor with the git repository, with the goal to execute it through the {{< param replacables.brand_name  >}}FX Platform. It provides another, more fluent way for connecting scripts with the {{< param replacables.brand_name  >}}FX Platform without the necessity to upload files directly to the platform.
 
 A new Project will be created to showcase the capabilty of the git integration:
 
@@ -41,7 +41,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 *Note that before adding your GitHub Repository to the platform, a public SSH key needs to be generated.*
 
 1. Login to your GitHub account
-2. Go to the Repository you want to add to the project, in this use case "ferris-services"
+2. Go to the Repository you want to add to the project, in this use case "{{< param replacables.brand_name_lowercase  >}}-services"
 3. Click on the the green Code button to showcase the repository URLs
 4. Copy the SSH URL
 
@@ -54,7 +54,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 {{< blocks/screenshot color="white" image="/images/create_git_repo.png">}}
 
-*Note that a pair of  public and private keys are generated for each repository which is safed on the FerrisFX platform. The private key is encrypted and stored safely in the database and will never be presented to anyone, whereas the public key should be copied and added to the git repository in order to provide the FerrisFX access to the repository and the possibility to clone services.*
+*Note that a pair of  public and private keys are generated for each repository which is safed on the {{< param replacables.brand_name  >}}FX platform. The private key is encrypted and stored safely in the database and will never be presented to anyone, whereas the public key should be copied and added to the git repository in order to provide the {{< param replacables.brand_name  >}}FX access to the repository and the possibility to clone services.*
 
 {{< blocks/screenshot color="white" image="/images/public_key_repo.png">}}
 
@@ -79,7 +79,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 ## Synchronise the repository
 
-1. Return to the FerrisFX platform
+1. Return to the {{< param replacables.brand_name  >}}FX platform
 2. Click the Sync Now button to synchronise the platform with the GitHub
 
 {{< blocks/screenshot color="white" image="/images/sync_now_button.png">}}

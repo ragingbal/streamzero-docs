@@ -38,7 +38,7 @@ As an Input from the client, the following items were used:
 - Judgement on automated model performance
 
 Assets & Artefacts:
-- Ferris error correction toolbox
+- {{< param replacables.brand_name  >}} error correction toolbox
 
 The deliverables included:
 - Customized data quality improvement workflow

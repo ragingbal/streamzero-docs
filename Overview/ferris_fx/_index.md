@@ -1,14 +1,14 @@
 ---
-title: "Ferris FX"
-linkTitle: "Ferris FX"
+title: "{{< param replacables.brand_name  >}} FX"
+linkTitle: "{{< param replacables.brand_name  >}} FX"
 weight: 1
 description: >
-  The following section provides a short overview of key features, concepts and architecture of Ferris FX.
+  The following section provides a short overview of key features, concepts and architecture of {{< param replacables.brand_name  >}} FX.
 ---
 
 ## Overview
 
-**FerrisFX** is a platform for building highly scalable, cross-network  sync or async microservices and agents.
+**{{< param replacables.brand_name  >}}FX** is a platform for building highly scalable, cross-network  sync or async microservices and agents.
 
 The unique low learning curve approach significantly reduces the cost of deploying enterprise wide process and integration pipelines across disparate systems at a speed.  While at the same time creating a platform with practically unbound access and ease of integration.  
 
@@ -16,13 +16,13 @@ FX is a ground-up rethink of how both sync and async microservices are built in 
 
 **On FX you are effectively writing large applications by connecting “blocks” of code (Services) through Events.** An approach that is highly intuitive and in line with iterative agile practices.
 
-The following is a brief review of some of the benefits and features of FerrisFX. Upcoming features are shown in italics.
+The following is a brief review of some of the benefits and features of {{< param replacables.brand_name  >}}FX. Upcoming features are shown in italics.
 
 | Quality                                                    | Description                                                  |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | **Low Learning Curve**                                     | Developers can practically learn within an hour how to work with FX. |
 | **Highly Scalable**                                        | Built from ground-up for scalability. The event messaging core is based on an Apache Kafka backbone we can transmit MILLIONs of jobs per day to any number of Services without break. |
-| **Resource Efficient**                                     | FX Microservices are deployed in real time as Events comes in. There are not 100s of microservice containers running on your platform. Just 3 components. The Ferris Manager UI, The Event Router and any number Executors. |
+| **Resource Efficient**                                     | FX Microservices are deployed in real time as Events comes in. There are not 100s of microservice containers running on your platform. Just 3 components. The {{< param replacables.brand_name  >}} Manager UI, The Event Router and any number Executors. |
 | **Plug into anything. Practically Limitless Integrations** | Leverage the whole universe of Library capabilites of Python ( Java, DOTNET or GoLang coming soon) , no need to depend solely on paid pre-packaged modules based on a strict structure and complicated build procedures and vendor lock-in. No-Code or Low-Code take your pick. |
 | **Combined Support for Sync and Async Microservices**      | *Manage both your Async and Sync Service Mesh in a single interface without any expensive and cumbersome 3rd party system.  Reduce the complexity of your infrastructure and the number of components.* |
 | **Fully Containerised and Easy to Deploy**                 | *Pre-packaged Kubernetes Templates with minimal customisation requirements fit straight into your enterprise Kubernetes(and if you dont have one we will build you one). Run in 1 command and Scale as you wish*. |

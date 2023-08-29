@@ -15,7 +15,7 @@ Most regulatory solutions today require huge maintenance effort on both business
 - Insurance
 
 ### Solution
-Leveraging the semantic integration capabilities of Ferris Data Platform, it  allows you to reuse all the integration efforts you have previously started and yet converge on a common path towards an integrated (regulatory) enterprise view. The ability to eliminate high-maintenance Extraction Transformation Loading (ETL) coding or ETL tooling in favor of a transparent and business driven process will save you money during the initial implementation and during ongoing maintenance.
+Leveraging the semantic integration capabilities of {{< param replacables.brand_name  >}} Data Platform, it  allows you to reuse all the integration efforts you have previously started and yet converge on a common path towards an integrated (regulatory) enterprise view. The ability to eliminate high-maintenance Extraction Transformation Loading (ETL) coding or ETL tooling in favor of a transparent and business driven process will save you money during the initial implementation and during ongoing maintenance.
 Templates and a proven process were applied to use what exists and build what’s missing without long-term lock in.
 
 The solution included:

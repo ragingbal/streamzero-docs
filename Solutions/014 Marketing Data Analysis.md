@@ -56,6 +56,6 @@ The use-case implementation resulted in:
 - -17% savings on campaign spend
 
 ### Testimonials
-> "Using Ferris we were able to digest a massive amount of text and extract personalized investment themes which allows our RMs to increase their face time with the clients and surprise them with the meaningful content."
+> "Using {{< param replacables.brand_name  >}} we were able to digest a massive amount of text and extract personalized investment themes which allows our RMs to increase their face time with the clients and surprise them with the meaningful content."
 — Mr. R. Giger, Head of Marketing and Campaigns, Swiss Private Bank
 

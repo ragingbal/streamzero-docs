@@ -12,7 +12,7 @@ Push the code to the Project linked GIT Repository
 
 ### Sync and Run the Service
 
-Proceed to the Ferris UI. Select the project that you created and click on the `Git Repositories Tab`. Click on
+Proceed to the {{< param replacables.brand_name  >}} UI. Select the project that you created and click on the `Git Repositories Tab`. Click on
 the `Sync Now` button. Your code is now deployed to the platform.
 
 ### Run the Service, View Results & Errors
@@ -33,7 +33,7 @@ the `Sync Now` button. Your code is now deployed to the platform.
 
 The script can be triggered by
 
-* Clicking the `Run` button displayed for each service on the Ferris UI.
+* Clicking the `Run` button displayed for each service on the {{< param replacables.brand_name  >}} UI.
 * Adding a cron expression in the UI. For how to set up a cron please view the
   section `Run your Service on a Scheduled CRON`
 * Linking it to an event emitted by another service within the platform.
@@ -59,8 +59,8 @@ Now we edit our earlier service **hello_world/app.py** to send out a custom even
 ```python
 import sys
 import json
-from ferris_cli import ApplicationConfigurator
-from ferris_cli import EventSender
+from {{< param replacables.brand_name_lowercase  >}}_cli import ApplicationConfigurator
+from {{< param replacables.brand_name_lowercase  >}}_cli import EventSender
 
 event_type = "my_custom_event_type"
 data = {"some_parameter": "Hello from Hello World"}
@@ -89,7 +89,7 @@ turn).
 Now that you have seen how it works it is probably best to delete the CRON expression and save the service.
 
 For a more detailed understanding of the CRON expression please check this
-page [CronJob](/docs/overview/ferris_fx/userguide/"CronJob") in the *User Guide*.
+page [CronJob](/docs/overview/{{< param replacables.brand_name_lowercase  >}}_fx/userguide/"CronJob") in the *User Guide*.
 
 In the above sections you have seen how basic services can be created and triggered in 3 ways.
 
@@ -140,13 +140,13 @@ The following is a sample secrets json.
 
 ## Retrieve Service Specific Configurations, Secrets and Parameters
 
-Ferris makes all configurations, secrets and parameters available to each script being run in the service through
+{{< param replacables.brand_name  >}} makes all configurations, secrets and parameters available to each script being run in the service through
 the `context` object.
 
 The following sample demonstrates the retrieval of the attribuets from the context object.
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 
 print("------- Get Service Config -------")
 print(context.config)
@@ -178,19 +178,19 @@ Update the service by uploading the new version of the code, trigger it and chec
 **Please note that Secrets are not displayed in the configuration manager to avoid inadvertent manual editing or secrets
 leakage.**
 
-For a full discussion on configuration best practices please review the page [Parameters and Configurations](/docs/overview/ferris_fx/developerguide/"CronJob")
+For a full discussion on configuration best practices please review the page [Parameters and Configurations](/docs/overview/{{< param replacables.brand_name_lowercase  >}}_fx/developerguide/"CronJob")
 
 ## Retrieve Platform Specific Configurations
 
-Platform specifc configurations are stored in Consul in the ferris.env key. These are primarily used for platform wide
+Platform specifc configurations are stored in Consul in the {{< param replacables.brand_name_lowercase  >}}.env key. These are primarily used for platform wide
 configurations and environment ( DEV, UAT, PRD) specific URLs etc. You can retrieve them like so.
 
 ```python
 import sys
 import json
-from ferris_cli import ApplicationConfigurator
+from {{< param replacables.brand_name_lowercase  >}}_cli import ApplicationConfigurator
 
-platform_config = ApplicationConfigurator().get("ferris.env")
+platform_config = ApplicationConfigurator().get("{{< param replacables.brand_name_lowercase  >}}.env")
 print(platform_config)
 ```
 
@@ -216,7 +216,7 @@ The following is a sample `secrets.json`.
 The following is a sample retreival of secrets.
 
 ```python
-from ferris_ef import get_secret
+from {{< param replacables.brand_name_lowercase  >}}_ef import get_secret
 
 print(f"DB NAME: {get_secret('DB_NAME')}")
 print(f"DB PASS: {get_secret('DB_PASS')}")
@@ -259,7 +259,7 @@ The data section of trigger events are provided to all scripts executed within a
 ```python
 import json
 import sys
-from ferris_ef import get_param
+from {{< param replacables.brand_name_lowercase  >}}_ef import get_param
 
 fa = json.loads(sys.argv[1])
 for k, v in fa.items():
@@ -408,7 +408,7 @@ The following is a self-explantory template showing the different types of form 
 
 ## Create an HPSM Message
 
-HPSM ticketing messages can be created by sending an appropriately formatted JSON to the ferris.hpsm Kafka topic.
+HPSM ticketing messages can be created by sending an appropriately formatted JSON to the {{< param replacables.brand_name_lowercase  >}}.hpsm Kafka topic.
 
 The following is a sample method to create an HPSM message.
 
@@ -441,7 +441,7 @@ def send_hpsm(hpsm_message):
     producer = KafkaProducer(
         bootstrap_servers=f"{platform_environment['KAFKA_BOOTSTRAP_SERVER']}:{platform_environment['KAFKA_PORT']}",
         value_serializer=lambda v: json.dumps(v).encode('utf-8'))
-    producer.send('ferris.hpsm', hpsm_message)
+    producer.send('{{< param replacables.brand_name_lowercase  >}}.hpsm', hpsm_message)
 
 
 owner_group = 'owner_group',

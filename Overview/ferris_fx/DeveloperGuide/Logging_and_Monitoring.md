@@ -5,7 +5,7 @@ description: >-
     Development Lifecycle of an FX Service.
 ---
 
-Ferris FX aggregates all operational data into Elasticsearch. Most operational data and events are transported through
+{{< param replacables.brand_name  >}} FX aggregates all operational data into Elasticsearch. Most operational data and events are transported through
 Kafka from which it is placed in Elasticsearch by Elasticsearch Sink containers.
 
 ## Logs
@@ -14,11 +14,11 @@ Contains Logs from all applications.
 
 ## Events
 
-All events that are transported through the `ferris.events` topic are loaded into Elasticsearch Index.
+All events that are transported through the `{{< param replacables.brand_name_lowercase  >}}.events` topic are loaded into Elasticsearch Index.
 
 ## Checking Logs
 
-Ferris Logs are in logstash format. The logs can be aggregated from the application by using the ferris_cli library.
+{{< param replacables.brand_name  >}} Logs are in logstash format. The logs can be aggregated from the application by using the {{< param replacables.brand_name_lowercase  >}}_cli library.
 
 Logs are identified by the app_name attribute which provides you with an indication of the application from which it was
 generated.

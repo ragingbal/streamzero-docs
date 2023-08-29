@@ -29,15 +29,15 @@ observed on the platform.
 1. Click on *Events* on the left side of the dashboard menu to open drop-down
 2. Click on *Event Types*
 3. Check the predefined *Event Types*
-    - ferris.apps.modules.approvals.step_approval_completed
-    - ferris.apps.modules.minio.file_uploaded
+    - {{< param replacables.brand_name_lowercase  >}}.apps.modules.approvals.step_approval_completed
+    - {{< param replacables.brand_name_lowercase  >}}.apps.modules.minio.file_uploaded
 
 Events can be created within scripts during service execution by sending a message to the **Kafka Topic** using
-the `ferris_cli` python service. For example, a service can be bound to a file_upload event that is triggered every time
+the `{{< param replacables.brand_name_lowercase  >}}_cli` python service. For example, a service can be bound to a file_upload event that is triggered every time
 a file gets uploaded to **MinIO** using FX file storage module. New event types will be registered as they are sent to
-the **Kafka Topic** using the `ferris_cli` python service.
+the **Kafka Topic** using the `{{< param replacables.brand_name_lowercase  >}}_cli` python service.
 
-Further details regarding `ferris_cli` can be found in the
+Further details regarding `{{< param replacables.brand_name_lowercase  >}}_cli` can be found in the
 subcategory [Development Lifecycle](/docs/developerguide/development-lifecycle/ "development-lifecycle") in the
 *Developer Guide*.
 
@@ -54,7 +54,7 @@ In this use case an existing service will be edited to define the file upload ev
 {{< blocks/screenshot color="white" image="/images/edit_service_event.png">}}
 
 1. Delete the *CronJob Schedule* to allow a *Trigger Event Type*
-2. Select the *Value* of the event type (ferris.apps.modules.minio.file_uploaded)
+2. Select the *Value* of the event type ({{< param replacables.brand_name_lowercase  >}}.apps.modules.minio.file_uploaded)
 3. Select *Entrypoint* -> select script in dropdown menu
 4. Save the edited service.
 

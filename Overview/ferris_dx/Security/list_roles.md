@@ -11,13 +11,13 @@ description: >-
 
 #### Roles
 
-Roles represent a collection of permissions or rights that can be performed within Ferris. They can be directly associated with the job of job a [#User]({{< ref "list_users.md" >}}) performs.
+Roles represent a collection of permissions or rights that can be performed within {{< param replacables.brand_name  >}}. They can be directly associated with the job of job a [#User]({{< ref "list_users.md" >}}) performs.
 
 > To get the the Users page, navigate to: Security > List Roles
 
 {{< blocks/screenshot color="white" image="/images/list_roles_page.png">}}
 
-*Example: List of Ferris Roles*
+*Example: List of {{< param replacables.brand_name  >}} Roles*
 
 Besides displaying the list of all available Roles, the Roles page offers a number of capabilities:
 
@@ -33,9 +33,9 @@ Besides displaying the list of all available Roles, the Roles page offers a numb
 
 ##### Add new Role
 
-Adding a new Role can be done directly within Ferris by any person who has the necessary permissions to do so. This is normally a designated Security Lead.
+Adding a new Role can be done directly within {{< param replacables.brand_name  >}} by any person who has the necessary permissions to do so. This is normally a designated Security Lead.
 
-Often times, adding new Roles is done by integrating Ferris with the corporate Identity Access Management (IAM) and Active Directory (AD).
+Often times, adding new Roles is done by integrating {{< param replacables.brand_name  >}} with the corporate Identity Access Management (IAM) and Active Directory (AD).
 
 > Click on the plus sign ![Add Role](/images/add_icon.png) to add a new user.
 

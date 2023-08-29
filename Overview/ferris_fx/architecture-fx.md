@@ -3,12 +3,12 @@ title: "FX Architecture Overview"
 linkTitle: "Architecture"
 weight: 7
 description: >-
-     An overview of the Ferris architecture
+     An overview of the {{< param replacables.brand_name  >}} architecture
 ---
 
 ## Concepts
 
-FerrisFX is based on 2 simple concepts - **Services** and **Events**
+{{< param replacables.brand_name  >}}FX is based on 2 simple concepts - **Services** and **Events**
 
 **On FX you are effectively writing large applications by connecting “blocks” of code through Events.**
 
@@ -51,7 +51,7 @@ hello_world(payload)
 
 ### Events
 
-Events are messages passed through the platform which are generated either by Services or by the Ferris Manager(in the case of manually triggered runs and scheduled runs).
+Events are messages passed through the platform which are generated either by Services or by the {{< param replacables.brand_name  >}} Manager(in the case of manually triggered runs and scheduled runs).
 
 Events are in the form of JSON formatted messages which adhere to the CloudEvents format.
 
@@ -80,7 +80,7 @@ The following is a sample Event.
 
 Services can be triggered in the following ways:
 
-- Manually: By clicking the 'Run' button on the FerrisFX Management Server.
+- Manually: By clicking the 'Run' button on the {{< param replacables.brand_name  >}}FX Management Server.
 - On Schedule: As a cron job whereas the Cron expression is added on the UI.
 - On Event: Where a package is configured to be triggered bt the FX Router when a specific type of event is observed on the platform.
 
@@ -97,7 +97,7 @@ This approach gives you a great flexibility to:
 
 
 
-## The FerrisFX Flow
+## The {{< param replacables.brand_name  >}}FX Flow
 
 At the core of the FX Platform messages (Events) are passed through **Apache Kafka**. These 'events' are JSON formatted messages which adhere to the CloudEvents format.
 
@@ -105,7 +105,7 @@ At the core of the FX Platform messages (Events) are passed through **Apache Kaf
 
 Each **Event** consists of what may be simplified as Headers and Payload. The headers indicate the type of event and other attributes. Whereas the payload are the attributes or parameters that are sent out by Services in order to either provide information about their state or for usage by downstream Services.
 
-The **FX Router(s)** is listening on the stream of Events passing through Kafka. Based on the configuration of the platform which is managed in the **Ferris Manager UI** the Router decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts are required to be run.
+The **FX Router(s)** is listening on the stream of Events passing through Kafka. Based on the configuration of the platform which is managed in the **{{< param replacables.brand_name  >}} Manager UI** the Router decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts are required to be run.
 
 The **FX Executor(s)** downloads the Service from the **Minio** storage and executes the **Service**. The Service may use any Python module that is embedded in the Executor and also use **Consul** for storing its configurations. The Executor sends a series of Events on Service execution. These are once again processed by the FX Router.
 
@@ -117,16 +117,16 @@ The FX Executor provides infrastructure which tracks logs, maintains record of s
 
 ## Required Infrastructure
 
-The following are the infrastructure components required for a FerrisFX installation
+The following are the infrastructure components required for a {{< param replacables.brand_name  >}}FX installation
 
 | Component         | Description                                                  |
 | ----------------- | ------------------------------------------------------------ |
-| Apache Kafka      | Apache Kafka serves as the backbone to pass events and operational data within a FerrisFX Installation. |
-| PostgreSQL        | Postgres is used as the database for the FerrisFX Manager Application. |
-| Consul            | Consul is the configuration store used by the FerrisFX platform. It is also used by the services to store their configurations. |
+| Apache Kafka      | Apache Kafka serves as the backbone to pass events and operational data within a {{< param replacables.brand_name  >}}FX Installation. |
+| PostgreSQL        | Postgres is used as the database for the {{< param replacables.brand_name  >}}FX Manager Application. |
+| Consul            | Consul is the configuration store used by the {{< param replacables.brand_name  >}}FX platform. It is also used by the services to store their configurations. |
 | MinIO             | Minio provides the platform internal storage for scripts and assets used by the Services. |
 | Elasticsearch     | Elasticsearch is used as a central store for all operational data. Thereby making the data easiliy searchable. |
 | Kibana            | Kibana is used to view and query the data stored in Elasticsearch. |
-| FerrisFX-Manager  | FerrisFX Manager is the main UI used for all activities on the FerrisFX platform. |
-| FerrisFX-Router   | The Route container is responsible for listenting to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
-| FerrisFX-Executor | The executor container(s) is where the code gets executed.   |
+| {{< param replacables.brand_name  >}}FX-Manager  | {{< param replacables.brand_name  >}}FX Manager is the main UI used for all activities on the {{< param replacables.brand_name  >}}FX platform. |
+| {{< param replacables.brand_name  >}}FX-Router   | The Route container is responsible for listenting to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
+| {{< param replacables.brand_name  >}}FX-Executor | The executor container(s) is where the code gets executed.   |

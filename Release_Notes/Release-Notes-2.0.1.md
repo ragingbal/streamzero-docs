@@ -10,23 +10,23 @@ description: >-
 
 ---
 
-![ferris_banner](/images/ferris_banner.png)
+![{{< param replacables.brand_name_lowercase  >}}_banner](/images/{{< param replacables.brand_name_lowercase  >}}_banner.png)
 
 
 
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 
-- [x] We have introduced the **Simple Ferris Dashboard** (Landing Page/Dashboard) developed in ReactJS to provide insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be finetuned and tailored to customer specific needs. The details can be found under the [Landing Page(Dashboard)](/docs/user-guide/landing_page/ "LandingPage") subcategory in the User Guide.
+- [x] We have introduced the **Simple {{< param replacables.brand_name  >}} Dashboard** (Landing Page/Dashboard) developed in ReactJS to provide insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be finetuned and tailored to customer specific needs. The details can be found under the [Landing Page(Dashboard)](/docs/user-guide/landing_page/ "LandingPage") subcategory in the User Guide.
 - [x] The first version of the **Open API REST Server - Generator** has been built which can be used for generating standardised REST APIs from the OpenAPI specification.
-- [x] Created **Dashboard API** which is used for feeding various charts on **Ferris Dashboard** including statistics for Executions by status, trigger type, average time of executions, number of executions per package etc.
+- [x] Created **Dashboard API** which is used for feeding various charts on **{{< param replacables.brand_name  >}} Dashboard** including statistics for Executions by status, trigger type, average time of executions, number of executions per package etc.
 - [x] Introduction of **manifest.json** files which can be uploaded with a package and used to define package execution entrypoint (name of the script that will be executed), order of scripts execution, schedule, tags, trigger event, etc.
-- [x] Added **Execution Context** to ferris_ef package which is accessible to any .py script at runtime and can be used for fetching configuration, secrets, parameters, information of the executing package and for manipulating the package state.
+- [x] Added **Execution Context** to {{< param replacables.brand_name_lowercase  >}}_ef package which is accessible to any .py script at runtime and can be used for fetching configuration, secrets, parameters, information of the executing package and for manipulating the package state.
 
 ---
 
 ## Changed <img src="/images/changed_yellow.png" alt="changed_yellow" style="zoom:25%;" />
 
-- [x] **PostgreSQL wrapper** was added to **Ferris CLI** 
+- [x] **PostgreSQL wrapper** was added to **{{< param replacables.brand_name  >}} CLI** 
 
 ---
 

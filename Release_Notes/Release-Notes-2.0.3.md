@@ -8,14 +8,14 @@ description: >-
      New features, improvements and fixes provided to you in the 3rd Quarter of the year 2022.
 ---
 
-![ferris_banner](/images/ferris_banner.png)
+![{{< param replacables.brand_name_lowercase  >}}_banner](/images/{{< param replacables.brand_name_lowercase  >}}_banner.png)
 
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 
 - [x] Introduced possibility to add **new python requirements** in the **deployment file** 
 - [x] **Pending excutions view** added.
-- [x] **Logging Capability** added to **ferris_ef** package with streaming to ElasticSearch.
-- [x] Introduced the **streaming automation module -** **FerrisSX **.
+- [x] **Logging Capability** added to **{{< param replacables.brand_name_lowercase  >}}_ef** package with streaming to ElasticSearch.
+- [x] Introduced the **streaming automation module -** **{{< param replacables.brand_name  >}}SX **.
 
 ---
 

@@ -7,7 +7,7 @@ description: >-
 ---
 
 
-The following is an overview of the development steps involved in building a Ferris Service.
+The following is an overview of the development steps involved in building a {{< param replacables.brand_name  >}} Service.
 
 ## Pull GIT Repository
 As a first step clone/pull from the GIT Repository that was set up for the project in the previous steps. 

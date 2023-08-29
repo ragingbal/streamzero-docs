@@ -20,19 +20,19 @@ As the names suggest the plain text configurations may be viewd as plain text wh
 The storage of the configs are handled in the backend by the Key-Value store Consul. 
 
 - The Values are held as JSON. 
-- While the keys themselves have a reasonbale level of flexibility we nonetheless specify certain key spaces which are reserved/pre-defined. These key spaces normally hold configurations which are specific to pre-built adapters or packages which are distributed with Ferris.
+- While the keys themselves have a reasonbale level of flexibility we nonetheless specify certain key spaces which are reserved/pre-defined. These key spaces normally hold configurations which are specific to pre-built adapters or packages which are distributed with {{< param replacables.brand_name  >}}.
 
 The following are the key namespaces.
 
-`ferris.apps.*`
+`{{< param replacables.brand_name_lowercase  >}}.apps.*`
 
-`ferris.packages.*`
+`{{< param replacables.brand_name_lowercase  >}}.packages.*`
 
-`ferris.adapters.*`
+`{{< param replacables.brand_name_lowercase  >}}.adapters.*`
 
-`ferris.env`
+`{{< param replacables.brand_name_lowercase  >}}.env`
 
-`ferris`
+`{{< param replacables.brand_name_lowercase  >}}`
 
 
 

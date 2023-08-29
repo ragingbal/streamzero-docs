@@ -5,19 +5,19 @@ tags: [security, users]
 categories: [Security]
 weight: 14
 description: >-
-  Meaning, role and setup of the Ferris User.  
+  Meaning, role and setup of the {{< param replacables.brand_name  >}} User.  
 
 ---
 
 #### Users
 
-This is us - humans - using Ferris on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.
+This is us - humans - using {{< param replacables.brand_name  >}} on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.
 
 > To get the the Users page, navigate to: Security > List Users
 
 {{< blocks/screenshot color="white" image="/images/list_users_page.png">}}
 
-*Example: List of Ferris Users*
+*Example: List of {{< param replacables.brand_name  >}} Users*
 
 Besides displaying the list of all current users, the Users page offers a number of capabilities:
 
@@ -30,15 +30,15 @@ Besides displaying the list of all current users, the Users page offers a number
 
 ##### Add new User
 
-Adding a new User can be done directly within Ferris by any person who has the necessary permissions to do so. This is normally a designated Security Lead.
+Adding a new User can be done directly within {{< param replacables.brand_name  >}} by any person who has the necessary permissions to do so. This is normally a designated Security Lead.
 
-Most often though, adding new Users is done by integrating Ferris with the corporate Identity Access Management (IAM) and Single Sign On (SSO) system.
+Most often though, adding new Users is done by integrating {{< param replacables.brand_name  >}} with the corporate Identity Access Management (IAM) and Single Sign On (SSO) system.
 
 > Click on the plus sign ![Add User](/images/add_icon.png) to add a new user.
 
 {{< blocks/screenshot color="white" image="/images/add_user_page.png">}}
 
-*Example: Adding a new Ferris Users*
+*Example: Adding a new {{< param replacables.brand_name  >}} Users*
 
 - **First Name, Last Name**: Full first and last name of the user
 
@@ -46,9 +46,9 @@ Most often though, adding new Users is done by integrating Ferris with the corpo
 
   *Possible options may include: Email, Company User ID, first name only or full name*
 
-- **Is Active**: Keep this boxed checked as long as the user is actively using Ferris.
+- **Is Active**: Keep this boxed checked as long as the user is actively using {{< param replacables.brand_name  >}}.
 
-  *Uncheck the box once a user is no longer using Ferris. Delete the user after a prolonged period of inactivity.*
+  *Uncheck the box once a user is no longer using {{< param replacables.brand_name  >}}. Delete the user after a prolonged period of inactivity.*
 
 - **Email:** The users email is the primary means of identification and communication.
 
@@ -64,12 +64,12 @@ Most often though, adding new Users is done by integrating Ferris with the corpo
 
 {{< blocks/screenshot color="white" image="/images/view_user_page.png">}}
 
-*Example: View only List of Ferris Users*
+*Example: View only List of {{< param replacables.brand_name  >}} Users*
 
 **User Info**
 
 - **User Name:** displays user name
-- **Is Active:** shows whether the user is set to active or inactive. Note that an inactivated user may not be able to loginto Ferris
+- **Is Active:** shows whether the user is set to active or inactive. Note that an inactivated user may not be able to loginto {{< param replacables.brand_name  >}}
 - **Role:** Associated roles
 - **Login Count:** Count of how many times the user has logged in in total
 
@@ -84,9 +84,9 @@ Most often though, adding new Users is done by integrating Ferris with the corpo
 - **Last login:** Last successful login date and time
 - **Failed login count:** Number of unsuccessful login attempts
 - **Created on:** Exact date and time this user was created (manually or via corporate SSO)
-- **Created by:** Ferris User or corporate integration service
+- **Created by:** {{< param replacables.brand_name  >}} User or corporate integration service
 - **Changed on:** Exact date and time this user was edited (manually or via corporate SSO)
-- **Changed by:** Ferris User or corporate integration service
+- **Changed by:** {{< param replacables.brand_name  >}} User or corporate integration service
 
 **Edit User**: Depending on your user rights (permission level) you may be able to enter the **Edit** function.
 
@@ -98,7 +98,7 @@ Most often though, adding new Users is done by integrating Ferris with the corpo
 
 Editing User details such as name, email or even Role(s) may be done here.
 
-*Note though that if the Ferris Security is integrated with the corporate Identity Access Management (IAM), adding or removing Roles should be done there in order to ensure the change is permanent and not overwritten at the next syncronization.*
+*Note though that if the {{< param replacables.brand_name  >}} Security is integrated with the corporate Identity Access Management (IAM), adding or removing Roles should be done there in order to ensure the change is permanent and not overwritten at the next syncronization.*
 
 > Click on the edit icon ![Add User](/images/edit_icon.png) in front of the user you want to apply changes to.
 
@@ -106,11 +106,11 @@ Editing User details such as name, email or even Role(s) may be done here.
 
 ##### Delete User
 
-Delete Users permanetly from Ferris.
+Delete Users permanetly from {{< param replacables.brand_name  >}}.
 
-*Note though that if the Ferris Security is integrated with the corporate Identity Access Management (IAM), deleting users should be done there in order to ensure the change is permanent and not overwritten at the next syncronization.*
+*Note though that if the {{< param replacables.brand_name  >}} Security is integrated with the corporate Identity Access Management (IAM), deleting users should be done there in order to ensure the change is permanent and not overwritten at the next syncronization.*
 
-*Also note that before permanetly deleting a user from Ferris, it is advised that the status of the user is first set to "inactive" for a period of time, and until it is sure that the user will not be reactivatet.*
+*Also note that before permanetly deleting a user from {{< param replacables.brand_name  >}}, it is advised that the status of the user is first set to "inactive" for a period of time, and until it is sure that the user will not be reactivatet.*
 
 > Click on the delete icon ![Add User](/images/delete_icon.png) in front of the user you want to delete.
 

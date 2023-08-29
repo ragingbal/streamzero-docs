@@ -5,7 +5,7 @@ tags: [support, terms]
 categories: [terms]
 weight: 109
 description: >-
- Ferris Labs Enterprise Support Policy.
+ {{< param replacables.brand_name  >}} Labs Enterprise Support Policy.
 
 
 ---
@@ -13,23 +13,23 @@ description: >-
 Last updated: September 05, 2022
 
 
-# Ferris Labs Support Policy
+# {{< param replacables.brand_name  >}} Labs Support Policy
 
 
 ## I.  SUPPORT.
-Support is available for the Software indicated on an applicable Order Schedule for the Subscription Term set forth therein.  This Ferris Labs Enterprise Support Policy applies only to Software that is installed by the Customer on its or its cloud provider’s premises. This Support Policy does not apply to Ferris Labs Galaxy Service or other products and services.
+Support is available for the Software indicated on an applicable Order Schedule for the Subscription Term set forth therein.  This {{< param replacables.brand_name  >}} Labs Enterprise Support Policy applies only to Software that is installed by the Customer on its or its cloud provider’s premises. This Support Policy does not apply to {{< param replacables.brand_name  >}} Labs Galaxy Service or other products and services.
 
-Requests for Support should be submitted to Ferris Labs Support through the established Ferris Labs Support channel.
+Requests for Support should be submitted to {{< param replacables.brand_name  >}} Labs Support through the established {{< param replacables.brand_name  >}} Labs Support channel.
 
-Customer will designate up to three (3) key contacts for the reporting and coordination of support requests (the “Business Administrators”). Customer may change the Business Administrators upon seven (7) days prior written notice to Ferris Labs.
+Customer will designate up to three (3) key contacts for the reporting and coordination of support requests (the “Business Administrators”). Customer may change the Business Administrators upon seven (7) days prior written notice to {{< param replacables.brand_name  >}} Labs.
 
-Support is available 08:00 through 18:00, Monday-Friday, Customer local time, excluding Ferris Labs holidays, except as noted in the Enterprise Support Response Times table below.
+Support is available 08:00 through 18:00, Monday-Friday, Customer local time, excluding {{< param replacables.brand_name  >}} Labs holidays, except as noted in the Enterprise Support Response Times table below.
 
 Support includes the following:
 - Remote Troubleshooting
 - Knowledgebase
 - Support Portal
-- Upgrades, Updates, Patches  generally made available to Ferris Labs
+- Upgrades, Updates, Patches  generally made available to {{< param replacables.brand_name  >}} Labs
 - other support customers
 - Hotfixes
 - Routine Installation and Configuration Issues
@@ -40,9 +40,9 @@ Support is provided in the English language only.
 
 ## II. SEVERITY LEVELS AND INCIDENT RESPONSE.
 
-When submitting a support request, Customer must 1) classify the severity level in accordance with the severity level definitions below, 2) provide Ferris Labs with all information necessary for Ferris Labs to process the request and 3) respond promptly to Ferris Labs with any information reasonably requested to clarify the support request.
+When submitting a support request, Customer must 1) classify the severity level in accordance with the severity level definitions below, 2) provide {{< param replacables.brand_name  >}} Labs with all information necessary for {{< param replacables.brand_name  >}} Labs to process the request and 3) respond promptly to {{< param replacables.brand_name  >}} Labs with any information reasonably requested to clarify the support request.
 
-Upon receipt of the support request, Ferris Labs will acknowledge the request.  Ferris Labs may in its discretion adjust the severity level of an issue in its sole discretion but will consider Customer’s feedback in good faith.  Incidents are escalated as necessary through the Ferris Labs Support organization, ending, if necessary, with Ferris Labs Head of Support.  
+Upon receipt of the support request, {{< param replacables.brand_name  >}} Labs will acknowledge the request.  {{< param replacables.brand_name  >}} Labs may in its discretion adjust the severity level of an issue in its sole discretion but will consider Customer’s feedback in good faith.  Incidents are escalated as necessary through the {{< param replacables.brand_name  >}} Labs Support organization, ending, if necessary, with {{< param replacables.brand_name  >}} Labs Head of Support.  
 
 ### Enterprise Support Severity Definitions ###
 
@@ -62,12 +62,12 @@ Upon receipt of the support request, Ferris Labs will acknowledge the request.  
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Initial Response  24 x 7   | 30 Minutes (email or phone)                                                                                                | 4 hours (email)                                                                                                  | 8 hours (email)                                                                                                  | Next business day (email)                                                                                        |
 | Status Updates             | hourly                                                                                                                     | every business day                                                                                               | every 5 business  days                                                                                           | every 7 business  days                                                                                           |
-| Ferris Labs Responsibility | Resource dedicated 24×7 dedication until a   workaround or resolution is achieved. Senior management immediately notified. | Resources available Monday Friday during local  business hours until a workaround  or resolution is achieved.    | Resources available Monday Friday during local  business hours until a workaround  or resolution is achieved.    | Resources available Monday Friday during local  business hours until a workaround  or resolution is achieved.    |
-| Customer Responsibility    | Resource dedicated 24×7 to  provide diagnostics   to Ferris Labs as needed.                                                | Resource available  Monday-Friday during local business hours to  provide diagnostics  to Ferris Labs as needed. | Resource available  Monday-Friday during local business hours to  provide diagnostics  to Ferris Labs as needed. | Resource available  Monday-Friday during local business hours to  provide diagnostics  to Ferris Labs as needed. |
+| {{< param replacables.brand_name  >}} Labs Responsibility | Resource dedicated 24×7 dedication until a   workaround or resolution is achieved. Senior management immediately notified. | Resources available Monday Friday during local  business hours until a workaround  or resolution is achieved.    | Resources available Monday Friday during local  business hours until a workaround  or resolution is achieved.    | Resources available Monday Friday during local  business hours until a workaround  or resolution is achieved.    |
+| Customer Responsibility    | Resource dedicated 24×7 to  provide diagnostics   to {{< param replacables.brand_name  >}} Labs as needed.                                                | Resource available  Monday-Friday during local business hours to  provide diagnostics  to {{< param replacables.brand_name  >}} Labs as needed. | Resource available  Monday-Friday during local business hours to  provide diagnostics  to {{< param replacables.brand_name  >}} Labs as needed. | Resource available  Monday-Friday during local business hours to  provide diagnostics  to {{< param replacables.brand_name  >}} Labs as needed. |
 
 
 ## III. SUPPORT EXCEPTIONS.  
-Ferris Labs has no obligation to address a Software issue if:
+{{< param replacables.brand_name  >}} Labs has no obligation to address a Software issue if:
 
 (i) caused by Customer’s negligence;
 
@@ -77,7 +77,7 @@ Ferris Labs has no obligation to address a Software issue if:
 
 (iv) arising from a third party Customer’s or a third party’s system or environment or a third party product or service.
 
-Issues outside the scope of this Support Policy at may be addressed upon the request of Customer at Ferris Labs professional services rates then in effect.
+Issues outside the scope of this Support Policy at may be addressed upon the request of Customer at {{< param replacables.brand_name  >}} Labs professional services rates then in effect.
 
-## IV. Ferris Labs GLOBAL SUPPORT CENTER
-Ferris Labs Support is located in Switzerland
+## IV. {{< param replacables.brand_name  >}} Labs GLOBAL SUPPORT CENTER
+{{< param replacables.brand_name  >}} Labs Support is located in Switzerland

@@ -18,7 +18,7 @@ The following is a sample manifest.json file.
   "entrypoint": "app.py",
   "execution_order": ["app_1.py", "app.py"],
   "tags": ["devops"],
-  "trigger_events": ["ferris.apps.minio.file_uploaded"],
+  "trigger_events": ["{{< param replacables.brand_name_lowercase  >}}.apps.minio.file_uploaded"],
   "schedule": "54 * * * *",
   "priority": "5",
   "allow_manual_triggering": true,

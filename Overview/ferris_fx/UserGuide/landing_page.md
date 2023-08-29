@@ -3,12 +3,12 @@ title: "Landing Page (Dashboard)"
 linkTitle: "Landing page (Dashboard)"
 weight: -16
 description: >-
-  Overview of the FerrisFX Dashboard.
+  Overview of the {{< param replacables.brand_name  >}}FX Dashboard.
 ---
 
-The FerrisFX  Landing page provides insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be fine tuned and tailored to customer specific needs. 
+The {{< param replacables.brand_name  >}}FX  Landing page provides insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be fine tuned and tailored to customer specific needs. 
 
-In this specific use case the insights and analytics of the FerrisFX Data Platform are highlighted as follows:
+In this specific use case the insights and analytics of the {{< param replacables.brand_name  >}}FX Data Platform are highlighted as follows:
 
 - In the first row, the last 18 executions and the last 18 executions with failed state
 

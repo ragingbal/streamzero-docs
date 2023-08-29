@@ -9,7 +9,7 @@ description: >-
 The Executions/Services is an event oriented framework that allows enterprise organizations the automation of script
 processing which can be triggered by:
 
-- Manually: By clicking the ‘Run’ button on the FerrisFX Management Server.
+- Manually: By clicking the ‘Run’ button on the {{< param replacables.brand_name  >}}FX Management Server.
 - On Schedule: As a cron job whereas the Cron expression is added on the UI.
 - On Event: Where a service is configured to be triggered by the FX Router when a specific type of event is observed on
   the platform.
@@ -75,7 +75,7 @@ li` python service.
 
 ```python
 import sys, json
-from ferris_cli.v2 import ApplicationConfigurator
+from {{< param replacables.brand_name_lowercase  >}}_cli.v2 import ApplicationConfigurator
 
 fa = json.loads(sys.argv[1])
 

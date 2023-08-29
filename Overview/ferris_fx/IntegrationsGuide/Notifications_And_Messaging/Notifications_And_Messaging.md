@@ -2,25 +2,25 @@
 title: "Notifications and Messaging"
 linkTitle: "Notifications and Messaging"
 description: >-
-  How to integrate a notifications with the Ferris Platform.
+  How to integrate a notifications with the {{< param replacables.brand_name  >}} Platform.
 ---
 
-Ferris provides you access to over 40 notification services such as Slack, Email and Telegram.
+{{< param replacables.brand_name  >}} provides you access to over 40 notification services such as Slack, Email and Telegram.
 
-FerrisDX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  A complete list is provided in a table and the end of the document.
+{{< param replacables.brand_name  >}}DX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  A complete list is provided in a table and the end of the document.
 
 In order to send notifications from your package you need is to create and emit a pre-defined event type. 
 
 ## How to send notifications from your package
 
-In order to send notifications from your package you need to send a 'ferris.notifications.apprise.notification' event from your package
+In order to send notifications from your package you need to send a '{{< param replacables.brand_name_lowercase  >}}.notifications.apprise.notification' event from your package
 
 You can do it like so.
 
 ```python
 import sys, json
-from ferris_cli.v2 import ApplicationConfigurator
-from ferris_ef import get_secret, get_param
+from {{< param replacables.brand_name_lowercase  >}}_cli.v2 import ApplicationConfigurator
+from {{< param replacables.brand_name_lowercase  >}}_ef import get_secret, get_param
 
 # Please note that the value for the url_template is the name used within the config 
 # For a specifc URL template in configurations.
@@ -32,7 +32,7 @@ data = {
 "title": "This is the subject"
 }
 
-event_type = "ferris.notifications.apprise.notification"
+event_type = "{{< param replacables.brand_name_lowercase  >}}.notifications.apprise.notification"
 
 Events().send(event_type, data)
 
@@ -44,7 +44,7 @@ Events().send(event_type, data)
 
 There are 2 approaches to implementing the notifications support.
 
-* Implementation within a Ferris Service
+* Implementation within a {{< param replacables.brand_name  >}} Service
 * Implementation in an Exit Gateway
 
 The 2nd option is used in platforms which are behind a firewall and therefore require the gateway to be outside the firewall for accessing external services. In these cases the adapter runs as a separate container. 
@@ -67,21 +67,21 @@ In order to send notifcations
 
 * A sample configuration file is provided below. Please use the table based on Apprise documentation to understand the URL Template structure.
 
-* Once the Apprise Notifications Package is installed along with the configurations you must link the package to be triggered by the 'ferris.notifications.apprise.notification' event.
+* Once the Apprise Notifications Package is installed along with the configurations you must link the package to be triggered by the '{{< param replacables.brand_name_lowercase  >}}.notifications.apprise.notification' event.
 
   
 
 
 
-## The Ferris Apprise Package
+## The {{< param replacables.brand_name  >}} Apprise Package
 
-The following is code for an ferris executor package to send apprise based notifications.
+The following is code for an {{< param replacables.brand_name_lowercase  >}} executor package to send apprise based notifications.
 
 To send a notification from within your python application, just do the following:
 
 ```python
 import apprise
-from ferris_ef import get_secret, get_param
+from {{< param replacables.brand_name_lowercase  >}}_ef import get_secret, get_param
 
 # Getting the incoming parameters
 url_template_name = get_param('url_template')
@@ -106,7 +106,7 @@ except Exception as ex:
 
 ## Configuration
 
-The following is a sample configuration which is uploaded as a secrets.json file for the Ferris Apprise Package. 
+The following is a sample configuration which is uploaded as a secrets.json file for the {{< param replacables.brand_name  >}} Apprise Package. 
 
 The configuration consists of a set of named URL templates. With each url_template being based on the Apprise URL schema as shown in the sections further in document. 
 
@@ -125,7 +125,7 @@ While you are free to name URL templates as you wish it is preferred to prefix t
 
 The configurations must be added to a secrets.json file and uploaded as part of the apprise_package.
 
-The apprise package must be configured to be triggered by the 'ferris.notifications.apprise.notification' event.
+The apprise package must be configured to be triggered by the '{{< param replacables.brand_name_lowercase  >}}.notifications.apprise.notification' event.
 
 ### Popular Notification Services
 

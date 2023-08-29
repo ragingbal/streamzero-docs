@@ -8,7 +8,7 @@ description: >-
      New features, improvements and fixes provided to you in the 4th Quarter of the year 2022.
 ---
 
-![ferris_banner](/images/ferris_banner.png)
+![{{< param replacables.brand_name_lowercase  >}}_banner](/images/{{< param replacables.brand_name_lowercase  >}}_banner.png)
 
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 

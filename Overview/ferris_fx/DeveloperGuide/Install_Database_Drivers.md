@@ -2,20 +2,20 @@
 title: "Database Integration"
 linkTitle: "Database Integration"
 description: >-
-    How to integrate a Database with the Ferris Platform.
+    How to integrate a Database with the {{< param replacables.brand_name  >}} Platform.
 ---
 
 ## Install Database Drivers
 
-Ferris DX requires a Python DB-API database driver and a SQLAlchemy dialect to be installed for each datastore you want
+{{< param replacables.brand_name  >}} DX requires a Python DB-API database driver and a SQLAlchemy dialect to be installed for each datastore you want
 to connect to within the executor image.
 
 ## Configuring Database Connections
 
-Ferris DX can manage preset connection configurations. This enables a platform wide set up for both confidential as well
+{{< param replacables.brand_name  >}} DX can manage preset connection configurations. This enables a platform wide set up for both confidential as well
 as general access databases.
 
-Ferris uses the SQL Alchemy Engine along with the URL template based approach to connection management. The connection
+{{< param replacables.brand_name  >}} uses the SQL Alchemy Engine along with the URL template based approach to connection management. The connection
 configurations are maintained as secrets within the platform and are therefore not publicly accessible i.e. access is
 provided for administrators only.
 
@@ -25,7 +25,7 @@ The following is how to retrieve a named connection. The following sample assume
 uploaded to the package as a `secrets.json.
 
 ```python
-from ferris_ef import get_secret
+from {{< param replacables.brand_name_lowercase  >}}_ef import get_secret
 import sqlalchemy as db
 
 db_url = get_secret('my_connection')
@@ -58,9 +58,9 @@ secret. For service level secret the following is a sample set up for a `secrets
 
 The following table provides a guide on the python libs to be installed within the Executor docker image. For
 instrctions on how to extend the Executor docker image please check the page
-/docs/extending_executor_image [Extending the Platform](/docs/overview/ferris_fx/developerguide/"platform_extensions"))
+/docs/extending_executor_image [Extending the Platform](/docs/overview/{{< param replacables.brand_name_lowercase  >}}_fx/developerguide/"platform_extensions"))
 
-You can read more here about how to install new database drivers and libraries into your FerrisDX executor image.
+You can read more here about how to install new database drivers and libraries into your {{< param replacables.brand_name  >}}DX executor image.
 
 A list of some of the recommended packages.
 

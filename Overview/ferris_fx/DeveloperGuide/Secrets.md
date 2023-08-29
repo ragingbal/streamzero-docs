@@ -27,7 +27,7 @@ The DX platform supports the following scopes for a secret.
 | Project Secrets  | Secrets that are accessible to any service within a specific project. These are created by uploading a JSON file on the project secrets tab on the UI. |
 | Platform Secrets | Secrets that are accessible to any service running on the platform. These are created by uploading JSON file on the Vault->Secrets page. |
 
-*When accessing secrets using `ferris_ef.context.secrets.get('secret_name')` it will first lookup for `secret_name` within service secrets, then project and finally platform*
+*When accessing secrets using `{{< param replacables.brand_name_lowercase  >}}_ef.context.secrets.get('secret_name')` it will first lookup for `secret_name` within service secrets, then project and finally platform*
 
 ##### The secrets.json File
 
@@ -44,26 +44,26 @@ Those values are stored double encrypted in database and can be only accessed wi
 
 ### Accessing secrets
 
-With `ferris_ef.context.secrets` you can access secrets stored on the platform, project or service scope.
+With `{{< param replacables.brand_name_lowercase  >}}_ef.context.secrets` you can access secrets stored on the platform, project or service scope.
 
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 context.secrets.get('secret_name')
 ```
 
 This command will first lookup for secret named `secret_name` within service secrets (defined in `secrets.json` file of the service). If such key doesn't exist it will lookup for it within project secrets, and finally within platform's secrets. If secret with such name doesn't exist `None` will be returned.
 
-Can be accessed using `ferris_ef.context.secrets.get('secret_name')`. Can be set using context.`secrets.set("secret_name", {"somekey":"someval"}, "project")`
+Can be accessed using `{{< param replacables.brand_name_lowercase  >}}_ef.context.secrets.get('secret_name')`. Can be set using context.`secrets.set("secret_name", {"somekey":"someval"}, "project")`
 
-Can be accessed using `ferris_ef.context.secrets.get('secret_name')`. Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "platform")`
+Can be accessed using `{{< param replacables.brand_name_lowercase  >}}_ef.context.secrets.get('secret_name')`. Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "platform")`
 
 ### Setting secrets
 
-Using `ferris_ef.context.secrets.set(name, value, context)` method you can set secrets on project and platform level.   
+Using `{{< param replacables.brand_name_lowercase  >}}_ef.context.secrets.set(name, value, context)` method you can set secrets on project and platform level.   
 
 ```python
-from ferris_ef import context
+from {{< param replacables.brand_name_lowercase  >}}_ef import context
 
 context.secrets.set(name="platform_secret", value={"somekey":"someval"}, context="platform")
 ```
@@ -95,10 +95,10 @@ Note that the service creation was presented in another submenu of the User Guid
 
 ##### test_secrets.py script
 
-This is an example script that shows how secrets from the `secrets.json` file can be accessed from a script at execution time using the `get_secret()` helper function from the `ferris_ef` service.
+This is an example script that shows how secrets from the `secrets.json` file can be accessed from a script at execution time using the `get_secret()` helper function from the `{{< param replacables.brand_name_lowercase  >}}_ef` service.
 
 ```python
-from ferris_ef import get_secret, get_param
+from {{< param replacables.brand_name_lowercase  >}}_ef import get_secret, get_param
 
 print(f"DB NAME: {get_secret('DB_NAME')}")
 print(f"DB PASS: {get_secret('DB_PASS')}")

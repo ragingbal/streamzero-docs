@@ -17,7 +17,7 @@ The use case is applicable in all regulated and cash-intense industries, i.e.
 
 ### Solution
 During the use case implementation 16 different cash-flow generating order systems were integrated using different schemas of how they handle transactions. 
-Ferris Data Platform was able to resolve the complexities of the event handling to absorb all different situations and rules that need to be applied depending on the different states that the system can take.
+{{< param replacables.brand_name  >}} Data Platform was able to resolve the complexities of the event handling to absorb all different situations and rules that need to be applied depending on the different states that the system can take.
 Data sourcing patterns evolved quickly from single file batch to data streaming using Kafka and Flink. A global end-user enablement was achieved with a multi network environment for regional user and both logical and physical data segregation. Irreversible client data protection using SHA 256 hash algorithm allowed for globally integrated algorithms in spite of highly confidential raw input data.
 We were able to implement dynamic throttling and acceleration of cash flows depending on current market situations and liquidity levels.
 

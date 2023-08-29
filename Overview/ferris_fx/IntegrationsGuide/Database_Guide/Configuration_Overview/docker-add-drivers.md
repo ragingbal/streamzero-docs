@@ -7,7 +7,7 @@ version: 1
 
 ## Adding New Database Drivers in Docker
 
-Ferris requires a Python database driver to be installed within the Executor Image for each additional type of database you
+{{< param replacables.brand_name  >}} requires a Python database driver to be installed within the Executor Image for each additional type of database you
 want to connect to.
 
 In this section, we'll walk through how to install the MySQL connector library. The connector
@@ -18,15 +18,15 @@ with the recommended connector library for each database.
 
 To figure out how to install the [database driver](/docs/databases/installing-database-drivers) of your choice.
 
-In the example, we'll walk through the process of installing a MySQL driver in Ferris Executor.
+In the example, we'll walk through the process of installing a MySQL driver in {{< param replacables.brand_name  >}} Executor.
 
 ### 2. Install MySQL Driver
 
 As we are currently running inside of a Docker container via `docker compose`, we cannot simply run
 `pip install mysqlclient` on our local shell and expect the drivers to be installed within the
-Docker containers for Ferris.
+Docker containers for {{< param replacables.brand_name  >}}.
 
-In order to address this, the Ferris `docker compose` setup comes with a mechanism for you to
+In order to address this, the {{< param replacables.brand_name  >}} `docker compose` setup comes with a mechanism for you to
 install packages locally, which will be ignored by Git for the purposes of local development. Please
 follow these steps:
 

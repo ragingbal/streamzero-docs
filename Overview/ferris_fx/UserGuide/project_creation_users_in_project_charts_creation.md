@@ -22,7 +22,7 @@ This subcategory explains the creation of new projects and users within these pr
 
 {{< blocks/screenshot color="white" image="/images/list_projects_created_roboto.png">}}
 
-Project on the Ferris Platform form the overarching organizational bracket for different types of objects. All users, services, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
+Project on the {{< param replacables.brand_name  >}} Platform form the overarching organizational bracket for different types of objects. All users, services, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
 
 ## Adding User(s) to the project
 
@@ -34,7 +34,7 @@ Once the project is created, the creator is automatically assigned as the Projec
 
 **Below the Project User Matrix**
 
-{{< blocks/screenshot color="white" image="/images/Ferris_Project_User_Matrix.png">}}
+{{< blocks/screenshot color="white" image="/images/{{< param replacables.brand_name  >}}_Project_User_Matrix.png">}}
 
 **Please note that users without Platform Administrator role, do not see any projects and services they are not assigned to. All project role rights are translated to service level also, eg. a user with Project User role will not be able to edit services of that project, only to list/view them and run a (manual) execution.**
 
