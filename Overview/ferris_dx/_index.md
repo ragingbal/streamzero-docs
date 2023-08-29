@@ -1,5 +1,5 @@
 ---
-title: "The {{< param replacables.brand_name  >}} DX Suite"
+title: "The {{< param replacables.brand_name >}} DX Suite"
 linkTitle: "{{< param replacables.brand_name  >}} DX Suite"
 tags: [dx]
 categories: []

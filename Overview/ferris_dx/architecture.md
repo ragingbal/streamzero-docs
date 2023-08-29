@@ -1,5 +1,5 @@
 ---
-title: "Architecture"
+title: "{{< param replacables.brand_name  >}} Architecture"
 linkTitle: "Architecture"
 weight: 3
 description: >
