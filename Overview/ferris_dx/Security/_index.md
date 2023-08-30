@@ -1,6 +1,6 @@
 ---
-title: "Security"
-linkTitle: "Security"
+title: "{{< param replacables.brand_name  >}} Security"
+linkTitle: "{{< param replacables.brand_name  >}} Security"
 tags: [security]
 categories: [Security]
 weight: 11
