@@ -1,11 +1,11 @@
 ---
-title: "The {{< param replacables.brand_name >}} DX Suite"
-linkTitle: "{{< param replacables.brand_name  >}} DX Suite"
+title: "The Ferris DX Suite"
+linkTitle: "Ferris DX Suite"
 tags: [dx]
 categories: []
 weight: 1
 description: >
-  The following section provides a short overview of key features, concepts and architecture of {{< param replacables.brand_name  >}} DX.
+  The following section provides a short overview of key features, concepts and architecture of Ferris DX.
 ---
 
 ## The {{< param replacables.brand_name  >}} Suite
