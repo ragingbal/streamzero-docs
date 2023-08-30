@@ -4,6 +4,7 @@ linkTitle: "{{< param replacables.brand_name  >}} Security"
 tags: [security]
 categories: [Security]
 weight: 11
+brandName: "{{ .replacables.brand_name  }} Security"
 description: >-
   Introduction and "how-to" guide to the {{< param replacables.brand_name  >}} Security and Access Rights Management.
 
