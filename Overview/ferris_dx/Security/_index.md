@@ -1,5 +1,5 @@
 ---
-title: "{{< .replacables.brand_name  >}} Security"
+title: "{{ .replacables.brand_name  }} Security"
 linkTitle: "{{< param replacables.brand_name  >}} Security"
 tags: [security]
 categories: [Security]
